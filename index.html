@@ -15,15 +15,24 @@
         body { background: linear-gradient(-20deg, #3a87ad, #fff) fixed; }
         .main { background-color: white; }
         img.thumbnail { max-width: 100%; }
-        
+
         .services li {font-size: 15px; margin-bottom: 3px;}
         .services li li { font-size: 14px; margin-bottom: 0; }
-        
+
         cite { display: block; font-style: italic;}
         cite:before { content: ' - '; }
-        
+
+        .page-header { margin-top: 0;}
+        @media(min-width: 576px) {
+            .page-header h1 { font-size: 72px;}
+        }
+        .page-header img {
+            margin-right: 0.5ex;
+        }
+        .lead { padding-top: 1em;}
+
         .contact { margin-top: 30px; }
-        
+
         .map-preview {
             background: url('img/truetilemap.png') center center no-repeat #F1F0ED;
             cursor: pointer;
@@ -37,12 +46,12 @@
             background: #F1F0ED;
             padding: 6px 10px;
         }
-        
+
 		.portfolio { margin-bottom: 30px; }
-		
+
         .footer {
             text-align: center;
-            min-height: 50px; 
+            min-height: 50px;
             margin-top: 30px;
             padding-top: 15px;
             padding-bottom: 5px;
@@ -56,17 +65,12 @@
             text-align: center;
         }
 
-        .lead { padding-top: 1em;}
-
-        @media(min-width: 992px) {
-            .lead { padding-top: 6em; }
-        }
 
     </style>
     <meta name="google-site-verification" content="mP57qIBQSVlFacQ6D0eo5bdQ_IvKAIEjqeqZk5tvMNE" />
   </head>
   <body>
-  
+
     <div class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -94,13 +98,13 @@
       <div class="page-header">
         <div class="row">
           <div class="col-md-12">
-            <h1><a href="#">True Tile</a></h1>
+            <h1><a href="#"><img src="/img/logo-no-text.svg" height="100" width="111.633" alt=""/>True Tile</a></h1>
             <p class="lead">Professional Tile Services for the Troy and Dayton Ohio area</p>
           </div>
 
         </div>
       </div>
-      
+
       <div class="row services">
           <div class="col-md-4">
             <h2><a name="services" href="#services"><span class="glyphicon glyphicon-check"></span> Services</a></h2>
@@ -126,13 +130,13 @@
           <div class="col-md-4 col-sm-6">
             <img class="thumbnail" src="img/patterned tile floor.jpg" alt="complicated pattern with multiple tile sizes" />
           </div>
-      </div> 
-      
+      </div>
+
       <div class="row reviews">
           <div class="col-md-12">
             <h2><a name="reviews" href="#reviews"><span class="glyphicon glyphicon-thumbs-up"></span> Reviews</a></h2>
           </div>
-          
+
           <div class="col-md-4">
             <blockquote>
                 <p class="stars text-success"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></p>
@@ -140,7 +144,7 @@
                 <cite>Bryan O.</cite>
             </blockquote>
           </div>
-          
+
           <div class="col-md-4">
             <blockquote>
                 <p class="stars text-success"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></p>
@@ -148,7 +152,7 @@
                 <cite>Herman D.</cite>
             </blockquote>
            </div>
-           
+
           <div class="col-md-4">
             <blockquote>
                 <p class="stars text-success"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></p>
@@ -162,10 +166,10 @@
           <div class="col-md-8">
             <p class="lead">Read more reviews and see why <a href="http://www.homeadvisor.com/rated.TrueTile.24091174.html">True Tile has an <b>average rating of 5/5 stars</b> on HomeAdvisor</a>
                 and an <a href="https://member.angieslist.com/member/store/18606375"><b>A rating</b> on Angie's List!</a></p>
-          </div> 
+          </div>
       </div>
-      
-      
+
+
 
     <div class="row contact">
       <div class="col-md-4">
@@ -186,13 +190,13 @@
             <a>Click to load interactive map</a>
         </div>
       </div>
-    </div> 
-    
-    
-    
+    </div>
+
+
+
 	<div class="portfolio">
 		<div class="row">
-		    <div class="col-sm-12">	
+		    <div class="col-sm-12">
 		        <h2><a name="portfolio" href="#portfolio"><span class="glyphicon glyphicon-folder-open"></span> Portfolio</a></h2>
 		    </div>
 		</div>
@@ -224,7 +228,7 @@
 			  </div>
 			</div>
 		  </div>
-		</div> 	
+		</div>
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
@@ -253,7 +257,7 @@
 			  </div>
 			</div>
 		  </div>
-		</div> 
+		</div>
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
@@ -284,14 +288,14 @@
 		  </div>
 		</div>
 	</div>
-    
+
         <!-- example html at http://bootswatch.com/spacelab/, documentation at http://getbootstrap.com/ -->
-       
+
         <!-- the icons I used here are included with bootstrap - http://getbootstrap.com/components/#glyphicons-glyphs there's another cool set avaliable from http://fontawesome.io/ - load the file from http://www.bootstrapcdn.com/#fontawesome_tab -->
 
     </div>
-    
-        
+
+
     <div class="footer">
         <div class="container">
 		<p>True Tile is Owned and Operated by Nathan James of Covington, Ohio.</p>
